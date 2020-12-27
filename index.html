@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="assets/style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Play&family=Russo+One&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      ul.hr {
+        margin: 0;
+        padding: 4px;
+      }
+
+      ul.hr li {
+        display: inline;
+        margin-right: 5px;
+        padding: 3px;
+      }
+    </style>
+    <title>BaitTV</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__inner wow animate__animated animate__bounceInUp">
+          <div class="header__logo">
+            <a class="text__logo" href="#">BaitTV</a>
+          </div>
+          <nav class="nav">
+            <a class="nav__link" href="#">Фільми</a>
+            <a class="nav__link" href="#">Серіали</a>
+            <a class="nav__link" href="#">Мультфільми</a>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <div class="intro">
+      <div class="intro__title">
+        <a class="intro__text" href="#">Трансформери</a>
+      </div>
+    </div>
+    <div class="main__content">
+      <div class="main__content__header">
+        <h2 class="name__film wow animate__animated animate__fadeIn">
+          Один вдома
+        </h2>
+        <p>1990, США, Комедія, Дитячий</p>
+        <p>Актори: Маколей Калкін, Джо Пеши, Деніел Стерн</p>
+      </div>
+      <div class="main__video wow animate__animated animate__fadeInUp">
+        <video
+          src="#"
+          width="750px"
+          controls
+          height="400px"
+          poster="images/poster.jpg"
+        ></video>
+      </div>
+      <div class="post__video">
+        <ul class="hr">
+          <li><a class="post__link" href="#">Дивитися потім</a></li>
+          <li><a class="post__link" href="#">Поділитися</a></li>
+          <li><a class="post__link" href="#">Трейлер</a></li>
+        </ul>
+      </div>
+      <div class="container">
+        <div class="flex-container">
+          <div class="first wow animate__animated animate__fadeInLeft">
+            8.0
+            <a class="button__cont" href="#" id="section_button">Оцініть</a>
+          </div>
+          <div class="second wow animate__animated animate__fadeInRight">
+            <p>
+              Фільм «Один вдома» - це весела новорічна історія, яка трапилася з
+              проникливим малюком на ім'я Кевін Маккалістер. Його численне
+              сімейство не балували молодшого увагою: старші брати знущалися,
+              сестри відверто ігнорували, а батьки були поглинені підготовкою до
+              майбутнього переїзду в Європу. Засмучений і скривджений на всю
+              свою велику рідню Кевін побажав, щоб всі його близькі зникли.
+              Бажання малюка збулося. Батьки настільки захопилися переїздом, що
+              просто забули дитину вдома. Тепер юному даруванню доведеться різко
+              стати самостійним. Ситуація ускладнюється тим, що на багатий
+              будинок Маккалістреров поклали око місцеві грабіжники. Вони
+              впевнені, в своїх силах і вважають, що цей будинок стане для них
+              легкою здобиччю. Здогадавшись про те, що його хочуть пограбувати
+              хитрий малюк вирішує взяти оборону особняка в свої руки. Він
+              розробляє хитромудрий план і заманює злочинців-невдах в саме серце
+              кумедних пасток. Але дорослі виявляються міцними горішками. Тепер
+              дістатися до головного героя - це справа їх честі. Хто ж виявиться
+              розумнішим - два дорослих грабіжника зі стажем або дев'ятирічна
+              дитина, який один вдома?
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="container"></div>
+    </div>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__text wow animate__animated animate__fadeInLeft">
+          <a class="link__facebook" href="#">Facebook</a>
+          <a class="link__instagram" href="#">Instagram</a>
+          <a class="link__youtube" href="#">YouTube</a>
+        </div>
+      </div>
+    </footer>
+
+    <div class="popup" id="popup">
+      <div class="popup_body">
+        <div class="popup_content">
+          <a href="" class="popup_close">X</a>
+          <form action="" novalidatea onsubmit="return validate();">
+            <p>Ваша почта</p>
+            <input id="mail" class="input" type="email" />
+            <span class="error" aria-live="polite"></span>
+            <p>Ваш номер телефону</p>
+            <input id="tel" class="input" type="tel" />
+            <p>Чи сподобався вам цей фыльм?</p>
+            <input type="radio" />Так <input type="radio" />Ні <br />
+            <p>Ваші враження від цього фільма?</p>
+            <textarea name="" id=""></textarea>
+            <button id="btn">Відправити</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="assets/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
+    <script src="assets/script.js"></script>
+  </body>
+</html>
